@@ -1,0 +1,80 @@
+Skip to content
+Why GitHub? 
+Team
+Enterprise
+Explore 
+Marketplace
+Pricing 
+Search
+Sign in
+Sign up
+Jangecraft
+/
+fake-pop-cat
+01
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+fake-pop-cat/(PE.2) cute cat/app.js /
+@Jangecraft
+Jangecraft Add files via upload
+Latest commit 2289a36 2 days ago
+ History
+ 1 contributor
+37 lines (32 sloc)  812 Bytes
+  
+var point = 0;
+var pic = 0;
+
+function pop() {
+    point = point + 1;
+    changePic();
+    document.getElementById("point").innerHTML = point
+}
+
+function changePic() {
+    if (pic == 0) {
+        pic = 1;
+        document.getElementById("pic").style.backgroundImage = "url('cute cat2.png')";
+        time();
+    }
+    else {
+        pic = 0;
+        document.getElementById("pic").style.backgroundImage = "url('cute cat.png')";
+    }
+}
+
+function time() {
+    var check = true;
+    let start = Date.now();
+
+    setInterval(function () {
+        if (check) {
+            let diff = Math.floor((Date.now() - start) / 10);
+            console.log(diff);
+
+            if (diff == 10){
+                check = false;
+                changePic();
+            }
+        }
+    }, 10);
+}
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete

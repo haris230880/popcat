@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        cute cat
+    </title>
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+        }
+
+        #full-screen-background-image {
+            z-index: -999;
+            min-height: 100%;
+            min-width: 1024px;
+            width: 100%;
+            height: auto;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        #wrapper {
+            position: relative;
+            width: 800px;
+            min-height: 400px;
+            margin: 100px auto;
+            color: #333;
+        }
+
+        h1 {
+            text-shadow: 0 0 0.2em #87F,
+                0 0 0.2em #87F,
+                0 0 0.2em #87F;
+        }
+
+        h2 {
+            text-shadow: 0 0 0.2em #87F,
+                0 0 0.2em #87F,
+                0 0 0.2em #87F;
+        }
+
+        #pic {
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body onclick="pop()" onload="changePic()">
+
+    <!-- <img alt="full screen background image" src="" id="full-screen-background-image"> -->
+
+  
+       
+      
+            <div id="pic">
+                <img style="width: 400px;height: 400px;">
+            </div>
+    
+        <h2 ALIGN="center" id="point">0</h2>
+   
+
+    <script src="app1.js"></script>
+</body>
+
+</html>
